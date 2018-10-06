@@ -9,7 +9,8 @@ public class NalecaDebug : MonoBehaviour {
         Debug,
         Warning,
         Error
-    }
+
+    } // enum Severity
 
     static public void Log(string message, Severity severity = Severity.Debug)
     {
@@ -25,5 +26,7 @@ public class NalecaDebug : MonoBehaviour {
                 Debug.Log("<color=red>Error: " + message + "</color>");
                 break;
         }
-    }
-}
+
+    } // NalecaDebug::Log
+
+} // class NalecaDebug 
