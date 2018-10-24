@@ -9,12 +9,16 @@ public class PoolEditor : MonoBehaviour {
     private Pool m_pool;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         m_pool = new Pool(m_objectToPool, m_poolSize);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
+
+    } // PoolEditor::Start
+
+    public Pool GetPool()
+    {
+        return m_pool;
+
+    } // PoolEditor::GetPool
+
+} // class PoolEditor
